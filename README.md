@@ -23,3 +23,9 @@ The analysis of the Reddit comments used several techniques, including NLP and G
 	•	NLP Models: Common NLP models like KeyBERT and BERTopic struggled to accurately identify themes in messy, highly nuanced, and slang-laden text, which is characteristic of Reddit discussions.
 	•	Chunking for GPT: Breaking the dataset into smaller chunks made it possible for GPT to process and provide coherent, useful insights, which proved more effective than other NLP approaches.
 	•	Human Verification: While GPT-generated results were useful, manual verification and interpretation were essential to ensure the relevance and clarity of the extracted themes.
+
+## Label Summary
+
+The final labeled dataset categorizes Reddit comments into six key themes: 'Check and Balance', 'PAP Conduct', 'Policy Gaps',
+    'Credible Opposition', 'Political Pluralism', 'Grounded Opposition'. See `summary_table.md` for the full breakdown of comment counts and upvote totals by label.
+
