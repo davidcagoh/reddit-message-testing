@@ -29,3 +29,85 @@ The analysis of the Reddit comments used several techniques, including NLP and G
 The final labeled dataset categorizes Reddit comments into six key themes: 'Check and Balance', 'PAP Conduct', 'Policy Gaps',
     'Credible Opposition', 'Political Pluralism', 'Grounded Opposition'. See `summary_table.md` for the full breakdown of comment counts and upvote totals by label.
 
+## Analysis Summary: Political Discourse on r/Singapore
+
+### 1. **Checks and Balances / Democracy Enhancement**
+Theme: Many voters support the opposition to ensure a counterbalance to PAP’s dominance. They believe that a strong opposition is crucial for preventing authoritarianism and fostering democratic principles like accountability and transparency.  
+Representative Quotes:
+- “I support opposition to keep PAP on their toes.”
+- “Without elected opposition MPs, how exactly do you expect the ruling party to be kept in check?”
+- “A stronger opposition means more checks and balances, more transparency.”
+  
+- **Topline Metrics**:
+  - Comment Count: 46 (29.5% of total comments)
+  - Upvote Total: 1925 (29.7% of total upvotes)
+
+---
+
+### 2. **Disillusionment with PAP Conduct / Governance**
+Theme: Disillusionment with the PAP’s perceived elitism, arrogance, cronyism, and lack of empathy is widespread. Voters express frustration with PAP’s failure to address the needs of average citizens and their detachment from real-world issues.  
+Representative Quotes:
+- “What’s particularly concerning is that some PAP ministers have made elitist remarks.”
+- “I can’t bring myself to support the PAP… they’re willing to create laws to suppress opposition.”
+- “The PAP has shown that they’re perfectly willing to create laws to suppress dissent.”
+  
+- **Topline Metrics**:
+  - Comment Count: 53 (34.0% of total comments)
+  - Upvote Total: 2056 (31.7% of total upvotes)
+
+---
+
+### 3. **Policy Issues / Failures**
+Theme: Economic frustration, particularly around issues like the cost of living, housing affordability, and perceived neglect of average citizens, motivates opposition support. Voters feel the ruling party prioritizes elites over the everyday citizen.  
+Representative Quotes:
+- “I bought my house under pressure… now I have to suffer with my crappy floorplan.”
+- “The PAP seems more concerned for the wealthy than for us middle or low-income class.”
+- “Housing affordability is a crisis for singles.”
+  
+- **Topline Metrics**:
+  - Comment Count: 28 (17.9% of total comments)
+  - Upvote Total: 1084 (16.7% of total upvotes)
+
+---
+
+### 4. **Support for Credible Opposition / Competence**
+Theme: Many voters support the opposition due to their perceived competence, professionalism, and ability to offer an effective alternative. Credibility, trustworthiness, and a proven track record in constituency management are key factors.  
+Representative Quotes:
+- “The WP is the only opposition party that has successfully run town councils over multiple terms.”
+- “Opposition candidates are credible, dedicated, and genuinely care.”
+- “Workers’ Party has shown they’re capable of handling real responsibilities.”
+  
+- **Topline Metrics**:
+  - Comment Count: 13 (8.3% of total comments)
+  - Upvote Total: 157 (2.4% of total upvotes)
+
+---
+
+### 5. **Political Pluralism**
+Theme: Many voters simply want change and support a multi-party system. They are dissatisfied with the status quo and believe in the importance of offering alternatives to the long-standing single-party dominance.  
+Representative Quotes:
+- “The goal isn’t chaos; it’s to encourage a more responsive and resilient political system.”
+- “I’ll vote opposition to encourage a more competitive democracy.”
+- “Someone offers you an orange… why would you not give the orange a try?”
+  
+- **Topline Metrics**:
+  - Comment Count: 7 (4.5% of total comments)
+  - Upvote Total: 917 (14.1% of total upvotes)
+
+---
+
+### 6. **Better Engagement and Grounded Opposition**
+Theme: Support for opposition is sometimes based on their perceived proximity to the people. Many feel opposition MPs are more accessible, responsive, and in touch with the issues that matter to voters.  
+Representative Quotes:
+- “Opposition ward actually solved my issues in a timely manner.”
+- “I’ve seen WP MPs who are incredibly hands-on and sincere.”
+- “Opposition MPs are more present and engage with the ground.”
+  
+- **Topline Metrics**:
+  - Comment Count: 9 (5.8% of total comments)
+  - Upvote Total: 344 (5.3% of total upvotes)
+
+---
+
+### Conclusion
+The analysis of political discourse within r/Singapore reveals that voters are motivated by a variety of factors, including the desire for stronger checks and balances, frustration with PAP governance, and concerns about socioeconomic issues. The opposition's perceived competence and proximity to the people also play significant roles in shaping voter sentiment. Ultimately, this analysis highlights the importance of addressing public concerns around accountability, representation, and socioeconomic challenges, as well as the need for a credible opposition capable of offering tangible alternatives.
