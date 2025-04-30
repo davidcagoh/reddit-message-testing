@@ -8,18 +8,26 @@ label_cols = [
     'Credible Opposition', 'Political Pluralism', 'Grounded Opposition'
 ]
 
-comment_counts = df[label_cols].sum()
-total_comments_labeled = comment_counts.sum()
-comment_pct = (comment_counts / total_comments_labeled * 100).round(1)
+# Total unique comments
+total_comments = len(df)
 
+# Compute comment counts and percentage (unique comments per label)
+comment_counts = df[label_cols].sum()
+comment_pct = (comment_counts / total_comments * 100).round(1)
+
+# Total unique upvotes (from all comments)
+total_upvotes = df['upvotes'].sum()
+
+# Compute upvotes per label (overlapping OK), then use total unique upvotes for percentage
 upvote_counts = {label: df.loc[df[label] == 1, 'upvotes'].sum() for label in label_cols}
-total_upvotes_labeled = sum(upvote_counts.values())
-upvote_pct = {label: round(upvote_counts[label] / total_upvotes_labeled * 100, 1) for label in label_cols}
+upvote_pct = {label: round(upvote_counts[label] / total_upvotes * 100, 1) for label in label_cols}
 
 # Bar chart: Comment Counts with Percentages
 plt.figure(figsize=(10, 5))
-ax = comment_counts.sort_values(ascending=False).plot(kind='bar', color='skyblue')
-for i, (count, pct) in enumerate(zip(comment_counts.sort_values(ascending=False), comment_pct.sort_values(ascending=False))):
+sorted_comments = comment_counts.sort_values(ascending=False)
+sorted_pct_comments = comment_pct[sorted_comments.index]
+ax = sorted_comments.plot(kind='bar', color='skyblue')
+for i, (count, pct) in enumerate(zip(sorted_comments, sorted_pct_comments)):
     ax.text(i, count + 1, f'{pct}%', ha='center', va='bottom')
 plt.title('Number of Comments per Category')
 plt.ylabel('Count')

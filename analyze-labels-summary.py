@@ -7,13 +7,20 @@ label_cols = [
     'Credible Opposition', 'Political Pluralism', 'Grounded Opposition'
 ]
 
-comment_counts = df[label_cols].sum()
-total_comments_labeled = comment_counts.sum()
-comment_pct = (comment_counts / total_comments_labeled * 100).round(1)
 
+# Total unique comments
+total_comments = len(df)
+
+# Compute comment counts and percentage (unique comments per label)
+comment_counts = df[label_cols].sum()
+comment_pct = (comment_counts / total_comments * 100).round(1)
+
+# Total unique upvotes (from all comments)
+total_upvotes = df['upvotes'].sum()
+
+# Compute upvotes per label (overlapping OK), then use total unique upvotes for percentage
 upvote_counts = {label: df.loc[df[label] == 1, 'upvotes'].sum() for label in label_cols}
-total_upvotes_labeled = sum(upvote_counts.values())
-upvote_pct = {label: round(upvote_counts[label] / total_upvotes_labeled * 100, 1) for label in label_cols}
+upvote_pct = {label: round(upvote_counts[label] / total_upvotes * 100, 1) for label in label_cols}
 
 # Build DataFrame
 summary_df = pd.DataFrame({
